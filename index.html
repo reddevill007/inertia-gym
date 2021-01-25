@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INERTIA GYM</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Hachi+Maru+Pop&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<style>
+    body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url(bg3.jpg);
+        background-size: 100% 100%;
+        font-family: 'Hachi Maru Pop', cursive;
+    }
+
+    .left {
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 60px;
+        top: -12px;
+    }
+
+    .left img {
+        width: 136px;
+    }
+
+    .left div {
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .mid {
+        /* border: 2px solid green; */
+        display: block;
+        width: 45%;
+        margin: 20px auto;
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 37px;
+        display: inline-block;
+        padding: 3px 3px;
+        margin: 3px -14px
+            /* border: 2px solid yellow; */
+
+    }
+
+    .navbar {
+        display: inline-block;
+        margin: 25px -12px;
+        padding: 12px 23px;
+    }
+
+    .navbar li {
+        color: white;
+        display: inline-block;
+        font-size: 16px;
+    }
+
+    .navbar li a {
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+
+    .navbar li a:hover,
+    .navbar li a.active {
+        text-decoration: underline;
+        color: rgb(151, 121, 121);
+        font-size: 20px;
+    }
+
+    .btn {
+        margin: 14px 15px;
+        background-color: black;
+        color: white;
+
+        padding: 5px 13px;
+        /* border: 2px solid white; */
+        border-radius: 10px;
+        font-size: 13px;
+        cursor: pointer;
+        font-family: 'Hachi Maru Pop', cursive;
+    }
+
+    .btn:hover {
+        background-color: rgb(46, 44, 44);
+    }
+
+    .container {
+        /* border: 2px solid white; */
+        margin: 84px 55px;
+        padding: 41px 65px;
+        width: 33%;
+        border-radius: 4px;
+    }
+
+    .form-group input {
+        text-align: center;
+        display: block;
+        width: 450px;
+        padding: 6px;
+        border: 2px solid white;
+        margin: 13px auto;
+        font-family: 'Hachi Maru Pop', cursive;
+        border-radius: 8px;
+    }
+
+    .container h3 {
+        text-align: center;
+    }
+
+    .container button {
+        display: block;
+        width: 29%;
+        margin: 15px auto;
+    }
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <!-- left box for logo -->
+            <img src="logo.png" alt="">
+            <div>
+                INERTIA GYM
+            </div>
+        </div>
+
+        <div class="mid">
+            <!-- mid box for navbar -->
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</li></a>
+                <li><a href="#">About Us</li></a>
+                <li><a href="#">Services</li></a>
+                <li><a href="#">Contact Us</li></a>
+            </ul>
+        </div>
+
+        <div class="right">
+            <!-- right box for buttons -->
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h3>Join the best gym of Delhi now</h3>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your locality">
+            </div>
+            <button class="btn">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+
+</html>
